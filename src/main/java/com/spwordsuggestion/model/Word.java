@@ -21,4 +21,6 @@ public class Word {
     private String uuid;
     @Field(name = "word", type = FieldType.Text, analyzer = "custom_index", searchAnalyzer = "custom_search")
     private String word;
+    @Field(name = "frequency",type = FieldType.Integer)
+    private Integer frequency;
 }
